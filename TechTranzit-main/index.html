@@ -1,0 +1,881 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>Literati An Education Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Literati a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<!-- font files -->
+		<link href='//fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet'
+			type='text/css'>
+		<!-- /font files -->
+		<!-- css files -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/viewbox.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/hoverex-all.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/portfolio.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<!-- /css files -->
+		<!-- js files -->
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<!-- /js files -->
+		<script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
+		<script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
+		<!-- 
+  initialize the SDK after all desired features are loaded, set useEmulator to false
+  to avoid connecting the SDK to running emulators.
+-->
+		<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const loadEl = document.querySelector('#load');
+				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				// // The Firebase SDK is initialized and available here!
+				//
+				// firebase.auth().onAuthStateChanged(user => { });
+				// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+				// firebase.firestore().doc('/foo/bar').get().then(() => { });
+				// firebase.functions().httpsCallable('yourFunction')().then(() => { });
+				// firebase.messaging().requestPermission().then(() => { });
+				// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+				// firebase.analytics(); // call to activate
+				// firebase.analytics().logEvent('tutorial_completed');
+				// firebase.performance(); // call to activate
+				//
+				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+				try {
+					let app = firebase.app();
+					let features = [
+						'auth',
+						'database',
+						'firestore',
+						'functions',
+						'messaging',
+						'storage',
+						'analytics',
+						'remoteConfig',
+						'performance',
+					].filter(feature => typeof app[feature] === 'function');
+					loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+				} catch (e) {
+					console.error(e);
+					loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+				}
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="topbar-w3ls">
+			<a href="index.html" class="logo">
+				<h1>TechTranzit</h1>
+			</a>
+			<div class="top-agileits">
+				<!-- Commented out search option and phone number - 30/10/2022 (farhan) -->
+				<!-- <form class="search-container" action="#" method="post">
+				<input id="search-box" type="text" class="search-box" name="q" placeholder="Search Here" />
+				<label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
+				<input type="submit" id="search-submit" />
+			</form> -->
+				<!-- <p><span class="glyphicon glyphicon-phone-alt"></span> +1 515 151515</p> -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- banner section -->
+		<section class="banner">
+			<!-- navigation -->
+			<div class="navbar-wrapper">
+				<div class="container-fluid">
+					<nav class="navbar navbar-inverse navbar-static-top">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html" class="page-scroll">Home</a></li>
+								<li><a href="#about" class="page-scroll">About</a></li>
+								<li><a href="#team" class="page-scroll">Team</a></li>
+								<li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+								<li><a href="#testimonial" class="page-scroll">Testimonials</a></li>
+								<li><a href="#contact" class="page-scroll">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<!-- /navigation -->
+			<div id="slideshow-banner">
+				<ul>
+					<!-- Changes sample images with College images - 30/10/2022 (Farhan) -->
+					<li class="slideshow-item"><img src="assest/IMG20210708080101.jpg" alt="" /></li>
+					<li class="slideshow-item"><img src="assest/IMG_20210714_224616.jpg" alt="" /></li>
+					<li class="slideshow-item"><img src="assest/IMG_20210729_222238.jpg" alt="" /></li>
+					<li class="slideshow-item"><img src="assest/IMG_20210729_222349.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</section>
+		<!-- /banner section -->
+		<!-- portfolio section -->
+		<section class="portfolio-w3ls" id="portfolio">
+			<div class="container">
+				<h3 class="slideanim">Our Events</h3>
+				<p class="text-header slideanim">Click To View More</p>
+			</div>
+			<div id="portfoliowrap" class="slideanim">
+				<!-- Deleted some sample photos and added DSMNRU photos - 30/10/2022 (Farhan) -->
+				<div class="portfolio-centered">
+					<div class="recentitems portfolio">
+						<div class="portfolio-item graphic-design">
+							<div class="he-wrap tpl6">
+								<img src="assest/Event_1.jpg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/Event_1.jpg" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Art"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item web-design">
+							<div class="he-wrap tpl6">
+								<img src="assest/EVENT_2.jpg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/EVENT_2.jpg" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item graphic-design">
+							<div class="he-wrap tpl6">
+								<img src="assest/EVENT_3.jpg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/EVENT_3.jpg" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item graphic-design">
+							<div class="he-wrap tpl6">
+								<img src="assest/EVENT_4.webp" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/EVENT_4.webp" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item books">
+							<div class="he-wrap tpl6">
+								<img src="assest/Meeting_1.jpeg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/Meeting_1.jpeg" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item graphic-design">
+							<div class="he-wrap tpl6">
+								<img src="assest/Meeting_2.jpg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/Meeting_2.jpg" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item books">
+							<div class="he-wrap tpl6">
+								<img src="assest/Meeting_1.jpeg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/Meeting_1.jpeg" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item graphic-design">
+							<div class="he-wrap tpl6">
+								<img src="assest/EVENT_4.webp" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="assest/EVENT_4.webp" class="dmbutton a2 thumbnail"
+											data-animate="fadeInUp" title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item web-design">
+							<div class="he-wrap tpl6">
+								<img src="images/port8.jpg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="images/port8.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp"
+											title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+						<div class="portfolio-item books">
+							<div class="he-wrap tpl6">
+								<img src="images/port9.jpg" alt="">
+								<div class="he-view">
+									<div class="bg a0" data-animate="fadeIn">
+										<a href="images/port9.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp"
+											title="Literati"><i class="fa fa-search"></i></a>
+									</div><!-- he bg -->
+								</div><!-- he view -->
+							</div><!-- he wrap -->
+						</div><!-- end col-12 -->
+
+
+					</div><!-- portfolio -->
+				</div><!-- portfolio container -->
+			</div>
+			<!--/Portfoliowrap -->
+		</section>
+		<!-- about section -->
+		<section class="about-w3ls" id="about">
+			<div class="container-fluid">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-info1">
+					<img src="images/about-pic.png" class="mini img-responsive slideanim" alt="">
+					<h2 class="w3layouts w3 w3l agileinfo slideanim">About Us</h2>
+					<img src="assest/Event_1.jpg" class="max img-responsive slideanim" alt="">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 about-info2">
+					<!-- Change the about us paragraph and image - 30/10/2022 (Farhan) -->
+					<p class="about-p1 w3layouts w3 w3l agileinfo slideanim">In the modern era where there are thousands
+						of
+						blooming startups being established every day we bring to you our small family "TechtranZit".
+						Under
+						the supervision of the Institute of engineering technology, Dr. Shakuntala Misra National
+						Rehabilitation University and with the guidence of Dr. C.K. Dixit we present to you a platform
+						to
+						enhance and define your expertise for a better tomorrow.
+					</p>
+					<p class="about-p1 wthree w3-agileits agileits-w3layouts agile w3-agile slideanim">We at Techtranzit
+						aim
+						at working towards an enhanced working space within our campus and to introduce our peers to the
+						advanced modern world which they Gonna embark in the near future as promising young talents
+						working
+						towards promising a future full of opportunities for them as well as for their counterpart.</p>
+					<ul class="sides slideanim">
+						<li>
+							<p><span class="fa fa-fighter-jet" aria-hidden="true"></span> Bringing the world to you,
+								Team
+								Techtranzit</p>
+						</li>
+						<!-- <li><p><span class="fa fa-fighter-jet" aria-hidden="true"></span> Literati Education, The Perfection At Its Finest.</p></li> -->
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<!-- /about section -->
+		<!-- testimonial section -->
+		<section class="test-w3ls slideanim" id="testimonial">
+			<div class="container">
+				<h3 class="slideanim">Events</h3>
+				<p class="text-header slideanim">What people say about us.</p>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000"
+					data-pause="hover">
+					<!-- Indicators -->
+					<ol class="carousel-indicators slideanim">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner slideanim" role="listbox">
+						<div class="item active">
+							<div class="test-agile">
+								<div class="col-lg-4 col-md-4 col-sm-4 test-info1">
+									<img src="https://www.mediacominc.com/wp/wp-content/uploads/2014/03/business-events.jpg"
+										class="img-responsive" alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 test-info2">
+									<p class="test-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+										velit nisl, ullamcorper eget elit vitae, vehicula consequat neque. Nunc sit amet
+										orci at orci blandit dictum a sed diam. Curabitur ut pharetra sem. Aliquam erat
+										volutpat. Cras scelerisque, nunc nec vulputate hendrerit, est neque pretium
+										velit,
+										at vulputate tortor neque ut ex. Vivamus sollicitudin eleifend urna, vitae
+										hendrerit
+										neque. Etiam egestas commodo dolor ut pulvinar. Maecenas in ipsum cursus,
+										commodo
+										justo sed, cursus neque.<span class="line-w3ls"></span>
+
+										<br>
+										<button type="button" class="btn btn-primary"
+											style="--bs-btn-padding-y: .125rem; --bs-btn-padding-x: 5px; --bs-btn-font-size: .75rem;">
+											<a href="#" style="color: white;">Read More</a>
+										</button><br>
+									</p>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="test-agile">
+								<div class="col-lg-4 col-md-4 col-sm-4 test-info1">
+									<img src="https://shrenusolutions.com/wp-content/uploads/2019/05/corporate-events-2.jpg"
+										class="img-responsive" alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 test-info2">
+									<p class="test-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+										velit nisl, ullamcorper eget elit vitae, vehicula consequat neque. Nunc sit amet
+										orci at orci blandit dictum a sed diam. Curabitur ut pharetra sem. Aliquam erat
+										volutpat. Cras scelerisque, nunc nec vulputate hendrerit, est neque pretium
+										velit,
+										at vulputate tortor neque ut ex. Vivamus sollicitudin eleifend urna, vitae
+										hendrerit
+										neque. Etiam egestas commodo dolor ut pulvinar. Maecenas in ipsum cursus,
+										commodo
+										justo sed, cursus neque.<span class="line-w3ls"></span>
+										<br>
+										<button type="button" class="btn btn-primary"
+											style="--bs-btn-padding-y: .125rem; --bs-btn-padding-x: 5px; --bs-btn-font-size: .75rem;">
+											<a href="#" style="color: white;">Read More</a>
+										</button><br>
+									</p>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="test-agile">
+								<div class="col-lg-4 col-md-4 col-sm-4 test-info1">
+									<img src="https://images.businessnewsdaily.com/app/uploads/2022/04/04080243/Employee_Props_Getty_fizkes.jpg"
+										class="img-responsive" alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 test-info2">
+									<p class="test-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+										velit nisl, ullamcorper eget elit vitae, vehicula consequat neque. Nunc sit amet
+										orci at orci blandit dictum a sed diam. Curabitur ut pharetra sem. Aliquam erat
+										volutpat. Cras scelerisque, nunc nec vulputate hendrerit, est neque pretium
+										velit,
+										at vulputate tortor neque ut ex. Vivamus sollicitudin eleifend urna, vitae
+										hendrerit
+										neque. Etiam egestas commodo dolor ut pulvinar. Maecenas in ipsum cursus,
+										commodo
+										justo sed, cursus neque.<span class="line-w3ls"></span>
+										<br>
+										<button type="button" class="btn btn-primary"
+											style="--bs-btn-padding-y: .125rem; --bs-btn-padding-x: 5px; --bs-btn-font-size: .75rem;">
+											<a href="#" style="color: white;">Read More</a>
+										</button><br>
+									</p>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- /testimonial section -->
+
+		
+		<!-- /gallery section -->
+		<!-- team section -->
+		<section class="team-w3ls slideanim" id="team">
+			<div class="container">
+				<h3 class="slideanim">Our Team</h3>
+				<p class="text-header wthree w3-agileits agileits-w3layouts agile w3-agile slideanim">The Best</p>
+				<!-- <div class="row-lg-2"> -->
+				<div class="col-lg-3 col-md-3 col-sm-3 team-agile1">
+					<div class="team-info">
+						<img src="images/team-img1.jpg" alt="" class="img-responsive slideanim">
+						<div class="team-details slideanim">
+							<h4 class="slideanim">Elizabeth</h4>
+							<p class="team-p1 slideanim">Correspondent</p>
+							<!-- <p class="team-p1 slideanim">Correspondent</p> -->
+							<ul class="social-icons1 slideanim">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 team-agile2">
+					<div class="team-info">
+						<img src="images/team-img2.jpg" alt="" class="img-responsive slideanim">
+						<div class="team-details slideanim">
+							<h4 class="slideanim">James</h4>
+							<p class="team-p1 slideanim">Principal</p>
+							<ul class="social-icons1 slideanim">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 team-agile3">
+					<div class="team-info">
+						<img src="images/team-img3.jpg" alt="" class="img-responsive slideanim">
+						<div class="team-details slideanim">
+							<h4 class="slideanim">Stephen</h4>
+							<p class="team-p1 slideanim">Chairman</p>
+							<ul class="social-icons1 slideanim">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 team-agile3 m-5">
+					<div class="team-info">
+						<img src="images/team-img3.jpg" alt="" class="img-responsive slideanim">
+						<div class="team-details slideanim">
+							<h4 class="slideanim">Stephen</h4>
+							<p class="team-p1 slideanim">Chairman</p>
+							<ul class="social-icons1 slideanim">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 team-agile1">
+					<div class="team-info">
+						<img src="images/team-img3.jpg" alt="" class="img-responsive slideanim">
+						<div class="team-details slideanim">
+							<h4 class="slideanim">Stephen</h4>
+							<p class="team-p1 slideanim">Chairman</p>
+							<ul class="social-icons1 slideanim">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 team-agile1">
+					<div class="team-info">
+						<img src="images/team-img3.jpg" alt="" class="img-responsive slideanim">
+						<div class="team-details slideanim">
+							<h4 class="slideanim">Stephen</h4>
+							<p class="team-p1 slideanim">Chairman</p>
+							<ul class="social-icons1 slideanim">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+		</section>
+		<!-- team section -->
+		<!-- Stats -->
+		<section class="stats-agileits" id="stats">
+			<div class="container">
+				<h3 class="slideanim">Our Statistics</h3>
+				<p class="text-header slideanim">In Figures</p>
+				<div class="stats-grid stats-grid-1 slideanim">
+					<div class="numscroller" data-slno='1' data-min='0' data-max='158' data-delay='3'
+						data-increment="1">85
+					</div>
+					<h4>Outsourcing</h4>
+				</div>
+				<div class="stats-grid stats-grid-2 slideanim">
+					<div class="numscroller" data-slno='1' data-min='0' data-max='63' data-delay='3' data-increment="1">
+						95
+					</div>
+					<h4>Team</h4>
+				</div>
+				<div class="stats-grid stats-grid-3 slideanim">
+					<div class="numscroller" data-slno='1' data-min='0' data-max='421' data-delay='3'
+						data-increment="1">80
+					</div>
+					<h4>Our Projects</h4>
+				</div>
+				<div class="stats-grid stats-grid-4 slideanim">
+					<div class="numscroller" data-slno='1' data-min='0' data-max='562' data-delay='3'
+						data-increment="1">90
+					</div>
+					<h4>Events</h4>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<!-- Stats -->
+
+		<!-- updates -->
+		<section class="update-w3ls">
+			<div class="container">
+				<h3 class="slideanim">Our Latest Updates</h3>
+				<p class="text-header slideanim">Recent Updates</p>
+				<div class="col-lg-6 col-md-6 update-info1">
+					<div class="update-agileits slideanim">
+						<div class="col-sm-6 col-xs-6 update-agile1">
+							<img src="images/update1.jpg" alt="" class="img-up slideanim">
+						</div>
+						<div class="col-sm-6 col-xs-6 update-agile2">
+							<a href="#" data-toggle="modal" data-target="#basicModal1" class="slideanim">
+								<h4>Nulla hendrerit</h4>
+							</a>
+							<p class="update-p1 slideanim">20, October</p>
+							<p class="update-p2 slideanim">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Nulla
+								hendrerit, nulla at fringilla auctor, eros massa pretium urna, egestas aliquam ex ante
+								egestas justo.</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 update-info2">
+					<div class="update-agileits slideanim">
+						<div class="col-sm-6 col-xs-6 update-agile1">
+							<img src="images/update2.jpg" alt="" class="img-up slideanim">
+						</div>
+						<div class="col-sm-6 col-xs-6 update-agile2">
+							<a href="#" data-toggle="modal" data-target="#basicModal2" class="slideanim">
+								<h4>egestas aliquam</h4>
+							</a>
+							<p class="update-p1 slideanim">25, October</p>
+							<p class="update-p2 slideanim">Maecenas pellentesque elit quis leo aliquet tristique. Nullam
+								aliquet tellus id lorem fringilla, id porttitor libero bibendum. Sed vel lectus eu ex
+								vulputate imperdiet. </p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="modal fade" id="basicModal1" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-hidden="true">&times;</button>
+								<h4 class="modal-title text-center" id="myModalLabel1">Literati</h4>
+							</div>
+							<div class="modal-body">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<img src="images/update1.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h5>Nulla hendrerit</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit, nulla
+										at
+										fringilla auctor, eros massa pretium urna, egestas aliquam ex ante egestas
+										justo.
+									</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-hidden="true">&times;</button>
+								<h4 class="modal-title text-center" id="myModalLabel2">Literati</h4>
+							</div>
+							<div class="modal-body">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<img src="images/update2.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h5>egestas aliquam</h5>
+									<p>Maecenas pellentesque elit quis leo aliquet tristique. Nullam aliquet tellus id
+										lorem
+										fringilla, id porttitor libero bibendum. Sed vel lectus eu ex vulputate
+										imperdiet.
+									</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /updates -->
+		<section class="map slideanim">
+			<iframe class="googlemaps"
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7120.407120666772!2d80.8343808!3d26.8334771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bffa130e0b9bb%3A0xcb1aa99899578ea7!2sDr.%20Shakuntala%20Misra%20National%20Rehabilitation%20University!5e0!3m2!1sen!2sin!4v1664874888626!5m2!1sen!2sin"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+		</section>
+		<!-- /Google Map -->
+		<section class="contact-us slideanim" id="contact">
+			<h3 class="text-center slideanim">Contact Us</h3>
+			<p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5">
+						<div class="contact-info">
+							<h4 class="slideanim">Connect With Us :-</h4>
+							<p class="slideanim"><span>Phone</span>123.456.7890</p>
+							<p class="slideanim"><span>Email</span><a
+									href="mailto:name@example.com">name@example.com</a>
+							</p>
+							<p class="addr slideanim"><span>Address</span>3481 Melrose Place,Beverly Hills, Chicago
+								90210.
+							</p>
+							<ul class="social-icons2">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-7">
+						<form action="#" method="post">
+							<div class="row">
+								<div class="col-sm-12 form-group slideanim">
+									<input class="form-control" id="name" name="name" placeholder="Name" type="text"
+										required>
+								</div>
+							</div>
+							<div class="row email-bar">
+								<div class="col-sm-12 form-group slideanim">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email"
+										required>
+								</div>
+							</div>
+							<textarea class="form-control slideanim" id="comments" name="comments" placeholder="Comment"
+								rows="5" required></textarea><br>
+							<div class="row">
+								<div class="col-sm-12 form-group">
+									<button class="btn btn-outline1 btn-lg" type="submit">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Contact -->
+		<!-- Footer Section -->
+		<section class="footer">
+			<div class="container">
+				<div class="copyright">
+					<p>&copy; 2022 <strong> TechTranzit</strong> | Design by <strong>Web Team</strong></p>
+				</div>
+			</div>
+		</section>
+		<!-- /Footer Section -->
+		<!-- back to top -->
+		<a href="#0" class="cd-top">Top</a>
+		<!-- /back to top -->
+		<!-- js files -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+		<script src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.slide.js"></script>
+		<script type="text/javascript">
+			$('#slideshow-banner').slide({
+				cdTime: 5000,
+				controllerLeftButton: "images/left.png",
+				controllerRightButton: "images/right.png"
+			});
+		</script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/grayscale.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.viewbox.min.js"></script>
+		<script>
+			$(function () {
+
+				$('.thumbnail').viewbox();
+				$('.thumbnail-2').viewbox();
+
+				(function () {
+					var vb = $('.popup-link').viewbox();
+					$('.popup-open-button').click(function () {
+						vb.trigger('viewbox.open');
+					});
+					$('.close-button').click(function () {
+						vb.trigger('viewbox.close');
+					});
+				})();
+
+				(function () {
+					var vb = $('.popup-steps').viewbox({ navButtons: false });
+
+					$('.steps-button').click(function () {
+						vb.trigger('viewbox.open', [0]);
+					});
+
+					$('.next-button').click(function () {
+						vb.trigger('viewbox.open', [1]);
+					});
+					$('.prev-button').click(function () {
+						vb.trigger('viewbox.open', [0]);
+					});
+					$('.ok-button').click(function () {
+						vb.trigger('viewbox.close');
+					});
+				})();
+
+			});
+		</script>
+		<script src="js/retina-1.1.0.js"></script>
+		<script src="js/jquery.hoverex.min.js"></script>
+		<script>
+			// Portfolio
+			(function ($) {
+				"use strict";
+				var $container = $('.portfolio'),
+					$items = $container.find('.portfolio-item'),
+					portfolioLayout = 'fitRows';
+
+				if ($container.hasClass('portfolio-centered')) {
+					portfolioLayout = 'masonry';
+				}
+
+				$container.isotope({
+					filter: '*',
+					animationEngine: 'best-available',
+					layoutMode: portfolioLayout,
+					animationOptions: {
+						duration: 750,
+						easing: 'linear',
+						queue: false
+					},
+					masonry: {
+					}
+				}, refreshWaypoints());
+
+				function refreshWaypoints() {
+					setTimeout(function () {
+					}, 1000);
+				}
+
+				$('nav.portfolio-filter ul a').on('click', function () {
+					var selector = $(this).attr('data-filter');
+					$container.isotope({ filter: selector }, refreshWaypoints());
+					$('nav.portfolio-filter ul a').removeClass('active');
+					$(this).addClass('active');
+					return false;
+				});
+
+				function getColumnNumber() {
+					var winWidth = $(window).width(),
+						columnNumber = 1;
+
+					if (winWidth > 1200) {
+						columnNumber = 5;
+					} else if (winWidth > 950) {
+						columnNumber = 4;
+					} else if (winWidth > 600) {
+						columnNumber = 3;
+					} else if (winWidth > 400) {
+						columnNumber = 2;
+					} else if (winWidth > 250) {
+						columnNumber = 1;
+					}
+					return columnNumber;
+				}
+
+				function setColumns() {
+					var winWidth = $(window).width(),
+						columnNumber = getColumnNumber(),
+						itemWidth = Math.floor(winWidth / columnNumber);
+
+					$container.find('.portfolio-item').each(function () {
+						$(this).css({
+							width: itemWidth + 'px'
+						});
+					});
+				}
+
+				function setPortfolio() {
+					setColumns();
+					$container.isotope('reLayout');
+				}
+
+				$container.imagesLoaded(function () {
+					setPortfolio();
+				});
+
+				$(window).on('resize', function () {
+					setPortfolio();
+				});
+			})(jQuery);
+		</script>
+		<script>
+			$(window).scroll(function () {
+				$(".slideanim").each(function () {
+					var pos = $(this).offset().top;
+
+					var winTop = $(window).scrollTop();
+					if (pos < winTop + 600) {
+						$(this).addClass("slide");
+					}
+				});
+			});
+		</script>
+		<!-- /js files -->
+	</body>
+
+</html>
